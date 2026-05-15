@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Keir Starmer",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Prime Minister",
+    "salary": 167146,
+    "image": "/people/keir-starmer.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Erling Haaland",
+    "industry": "Sport",
+    "employer": "Manchester City FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 19500000,
+    "image": "/people/erling-haaland.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Gary Lineker",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "Television Presenter",
+    "salary": 1350000,
+    "image": "/people/gary-lineker.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Amanda Pritchard",
+    "industry": "Healthcare",
+    "employer": "NHS England",
+    "jobTitle": "Chief Executive",
+    "salary": 270000,
+    "image": "/people/amanda-pritchard.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sadiq Khan",
+    "industry": "Politics",
+    "employer": "Greater London Authority",
+    "jobTitle": "Mayor of London",
+    "salary": 152734,
+    "image": "/people/sadiq-khan.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bukayo Saka",
+    "industry": "Sport",
+    "employer": "Arsenal FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 9100000,
+    "image": "/people/bukayo-saka.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Rachel Reeves",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Chancellor of the Exchequer",
+    "salary": 164080,
+    "image": "/people/rachel-reeves.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Nigel Farage",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Member of Parliament",
+    "salary": 91346,
+    "image": "/people/nigel-farage.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Clare Balding",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "Sports Broadcaster",
+    "salary": 410000,
+    "image": "/people/clare-balding.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Marcus Rashford",
+    "industry": "Sport",
+    "employer": "Aston Villa FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 10400000,
+    "image": "/people/marcus-rashford.jpg"
+  }
+]
