@@ -1,8 +1,27 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { scoreColor } from '@/lib/scoring'
 import type { PublicPerson, RoundResult } from './PersonCard'
+
+function useCountUp(target: number, duration: number) {
+  const [display, setDisplay] = useState(0)
+  const rafRef = useRef<number | null>(null)
+
+  useEffect(() => {
+    const start = performance.now()
+    function tick(now: number) {
+      const t = Math.min((now - start) / duration, 1)
+      const eased = 1 - Math.pow(1 - t, 3)
+      setDisplay(Math.round(eased * target))
+      if (t < 1) rafRef.current = requestAnimationFrame(tick)
+    }
+    rafRef.current = requestAnimationFrame(tick)
+    return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current) }
+  }, [target, duration])
+
+  return display
+}
 
 interface Props {
   results: RoundResult[]
@@ -20,6 +39,7 @@ function scoreEmoji(score: number): string {
 export default function ScoreScreen({ results, people, date }: Props) {
   const [copied, setCopied] = useState(false)
   const total = results.reduce((sum, r) => sum + r.score, 0)
+  const animatedTotal = useCountUp(total, 1500)
   const maxPossible = 5000
 
   const displayDate = new Date(date + 'T00:00:00Z').toLocaleDateString('en-GB', {
@@ -65,7 +85,7 @@ export default function ScoreScreen({ results, people, date }: Props) {
         <p className="text-slate-400 text-sm mb-1">{displayDate}</p>
         <h2 className="text-3xl font-bold text-white">Game Over!</h2>
         <p className="text-8xl font-bold text-yellow-400 mt-2 tracking-tight">
-          {total.toLocaleString('en-GB')}
+          {animatedTotal.toLocaleString('en-GB')}
         </p>
         <p className="text-slate-500 text-sm mt-1">
           {percentage}% of {maxPossible.toLocaleString('en-GB')} possible

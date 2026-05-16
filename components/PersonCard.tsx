@@ -64,16 +64,16 @@ function PersonPhoto({ src, name }: { src: string; name: string }) {
     .toUpperCase()
 
   return (
-    <div className="relative w-36 h-36 mx-auto rounded-full overflow-hidden bg-slate-700 flex items-center justify-center ring-4 ring-slate-600">
+    <div className="relative w-[200px] h-[260px] mx-auto rounded-2xl overflow-hidden bg-slate-700 flex items-center justify-center">
       {!failed && (
         <img
           src={src}
           alt={name}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-top"
           onError={() => setFailed(true)}
         />
       )}
-      {failed && <span className="text-4xl font-bold text-slate-300">{initials}</span>}
+      {failed && <span className="text-5xl font-bold text-slate-300">{initials}</span>}
     </div>
   )
 }

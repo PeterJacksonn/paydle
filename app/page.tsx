@@ -22,21 +22,6 @@ export default function Home() {
           How to Play
         </Link>
       </div>
-
-      <div className="mt-16 grid grid-cols-3 gap-6 text-center max-w-sm w-full">
-        <div>
-          <p className="text-2xl font-bold text-white">5</p>
-          <p className="text-slate-500 text-xs mt-1">rounds per day</p>
-        </div>
-        <div>
-          <p className="text-2xl font-bold text-white">3</p>
-          <p className="text-slate-500 text-xs mt-1">hints available</p>
-        </div>
-        <div>
-          <p className="text-2xl font-bold text-white">5,000</p>
-          <p className="text-slate-500 text-xs mt-1">max score</p>
-        </div>
-      </div>
     </main>
   )
 }

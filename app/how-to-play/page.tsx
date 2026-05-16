@@ -72,15 +72,7 @@ export default function HowToPlay() {
         ))}
       </div>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl px-4 py-4">
-        <p className="text-white font-semibold text-sm">Scoring</p>
-        <p className="text-slate-400 text-sm mt-1">
-          Scoring uses a logarithmic ratio — being exactly right scores full potential, being 10× off scores 0. Guessing order-of-magnitude matters more than exact precision. Fewer hints = higher potential.
-        </p>
-        <p className="text-slate-400 text-sm mt-2">Maximum possible score: <span className="text-white font-semibold">5,000 pts</span></p>
-      </div>
-
-      <Link
+<Link
         href="/play"
         className="w-full py-4 bg-yellow-400 text-slate-900 font-bold text-lg rounded-xl hover:bg-yellow-300 transition-colors text-center"
       >
