@@ -5,7 +5,7 @@
     "industry": "Politics",
     "employer": "House of Commons",
     "jobTitle": "Prime Minister",
-    "salary": 167146,
+    "salary": 167000,
     "image": "/people/keir-starmer.jpg"
   },
   {
@@ -41,7 +41,7 @@
     "industry": "Politics",
     "employer": "Greater London Authority",
     "jobTitle": "Mayor of London",
-    "salary": 152734,
+    "salary": 153000,
     "image": "/people/sadiq-khan.jpg"
   },
   {
@@ -59,7 +59,7 @@
     "industry": "Politics",
     "employer": "House of Commons",
     "jobTitle": "Chancellor of the Exchequer",
-    "salary": 164080,
+    "salary": 164000,
     "image": "/people/rachel-reeves.jpg"
   },
   {
@@ -88,5 +88,367 @@
     "jobTitle": "Professional Footballer",
     "salary": 10400000,
     "image": "/people/marcus-rashford.jpg"
+  },
+
+  {
+    "id": 11,
+    "name": "Mohamed Salah",
+    "industry": "Sport",
+    "employer": "Liverpool FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 18200000,
+    "image": "/people/mohamed-salah.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Phil Foden",
+    "industry": "Sport",
+    "employer": "Manchester City FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 15600000,
+    "image": "/people/phil-foden.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Declan Rice",
+    "industry": "Sport",
+    "employer": "Arsenal FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 15600000,
+    "image": "/people/declan-rice.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Bruno Fernandes",
+    "industry": "Sport",
+    "employer": "Manchester United FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 13000000,
+    "image": "/people/bruno-fernandes.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Virgil van Dijk",
+    "industry": "Sport",
+    "employer": "Liverpool FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 11400000,
+    "image": "/people/virgil-van-dijk.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Cole Palmer",
+    "industry": "Sport",
+    "employer": "Chelsea FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 7800000,
+    "image": "/people/cole-palmer.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Alexander Isak",
+    "industry": "Sport",
+    "employer": "Newcastle United FC",
+    "jobTitle": "Professional Footballer",
+    "salary": 6200000,
+    "image": "/people/alexander-isak.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Graham Norton",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "Television Presenter",
+    "salary": 850000,
+    "image": "/people/graham-norton.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Claudia Winkleman",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "Television Presenter",
+    "salary": 450000,
+    "image": "/people/claudia-winkleman.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Fiona Bruce",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "News Presenter",
+    "salary": 500000,
+    "image": "/people/fiona-bruce.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Alan Shearer",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "Football Pundit",
+    "salary": 390000,
+    "image": "/people/alan-shearer.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Naga Munchetty",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "News Presenter",
+    "salary": 400000,
+    "image": "/people/naga-munchetty.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Piers Morgan",
+    "industry": "Media",
+    "employer": "TalkTV",
+    "jobTitle": "Television Presenter",
+    "salary": 2000000,
+    "image": "/people/piers-morgan.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Jeremy Clarkson",
+    "industry": "Media",
+    "employer": "Amazon Prime",
+    "jobTitle": "Television Presenter",
+    "salary": 10000000,
+    "image": "/people/jeremy-clarkson.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Ant McPartlin",
+    "industry": "Media",
+    "employer": "ITV",
+    "jobTitle": "Television Presenter",
+    "salary": 8000000,
+    "image": "/people/ant-mcpartlin.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Declan Donnelly",
+    "industry": "Media",
+    "employer": "ITV",
+    "jobTitle": "Television Presenter",
+    "salary": 8000000,
+    "image": "/people/declan-donnelly.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Richard Osman",
+    "industry": "Media",
+    "employer": "Freelance",
+    "jobTitle": "Author & Television Presenter",
+    "salary": 1000000,
+    "image": "/people/richard-osman.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Angela Rayner",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Deputy Prime Minister",
+    "salary": 164000,
+    "image": "/people/angela-rayner.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Wes Streeting",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Secretary of State for Health",
+    "salary": 164000,
+    "image": "/people/wes-streeting.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Yvette Cooper",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Home Secretary",
+    "salary": 164000,
+    "image": "/people/yvette-cooper.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Kemi Badenoch",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Leader of the Opposition",
+    "salary": 140000,
+    "image": "/people/kemi-badenoch.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Ed Miliband",
+    "industry": "Politics",
+    "employer": "House of Commons",
+    "jobTitle": "Secretary of State for Energy",
+    "salary": 164000,
+    "image": "/people/ed-miliband.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Chris Whitty",
+    "industry": "Healthcare",
+    "employer": "UK Government",
+    "jobTitle": "Chief Medical Officer",
+    "salary": 215000,
+    "image": "/people/chris-whitty.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Ken Murphy",
+    "industry": "Business",
+    "employer": "Tesco",
+    "jobTitle": "Chief Executive",
+    "salary": 10000000,
+    "image": "/people/ken-murphy.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Stuart Machin",
+    "industry": "Business",
+    "employer": "Marks & Spencer",
+    "jobTitle": "Chief Executive",
+    "salary": 3800000,
+    "image": "/people/stuart-machin.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Charlie Nunn",
+    "industry": "Business",
+    "employer": "Lloyds Banking Group",
+    "jobTitle": "Chief Executive",
+    "salary": 5600000,
+    "image": "/people/charlie-nunn.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Tim Martin",
+    "industry": "Business",
+    "employer": "JD Wetherspoon",
+    "jobTitle": "Chairman",
+    "salary": 320000,
+    "image": "/people/tim-martin.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Simon Cowell",
+    "industry": "Media",
+    "employer": "Syco Entertainment",
+    "jobTitle": "Television Producer",
+    "salary": 50000000,
+    "image": "/people/simon-cowell.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Bear Grylls",
+    "industry": "Media",
+    "employer": "Freelance",
+    "jobTitle": "Adventurer & Television Presenter",
+    "salary": 5000000,
+    "image": "/people/bear-grylls.jpg"
+  },
+  {
+    "id": 40,
+    "name": "David Attenborough",
+    "industry": "Media",
+    "employer": "BBC",
+    "jobTitle": "Broadcaster & Naturalist",
+    "salary": 1000000,
+    "image": "/people/david-attenborough.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Adele",
+    "industry": "Music",
+    "employer": "Freelance",
+    "jobTitle": "Singer & Songwriter",
+    "salary": 40000000,
+    "image": "/people/adele.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Ed Sheeran",
+    "industry": "Music",
+    "employer": "Freelance",
+    "jobTitle": "Singer & Songwriter",
+    "salary": 35000000,
+    "image": "/people/ed-sheeran.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Ricky Gervais",
+    "industry": "Media",
+    "employer": "Freelance",
+    "jobTitle": "Comedian & Writer",
+    "salary": 15000000,
+    "image": "/people/ricky-gervais.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Holly Willoughby",
+    "industry": "Media",
+    "employer": "Freelance",
+    "jobTitle": "Television Presenter",
+    "salary": 2000000,
+    "image": "/people/holly-willoughby.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Peter Kay",
+    "industry": "Media",
+    "employer": "Freelance",
+    "jobTitle": "Comedian",
+    "salary": 8000000,
+    "image": "/people/peter-kay.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Gordon Ramsay",
+    "industry": "Media",
+    "employer": "Studio Ramsay",
+    "jobTitle": "Chef & Television Presenter",
+    "salary": 20000000,
+    "image": "/people/gordon-ramsay.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Lewis Hamilton",
+    "industry": "Sport",
+    "employer": "Scuderia Ferrari",
+    "jobTitle": "Formula 1 Driver",
+    "salary": 40000000,
+    "image": "/people/lewis-hamilton.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Tyson Fury",
+    "industry": "Sport",
+    "employer": "Freelance",
+    "jobTitle": "Professional Boxer",
+    "salary": 25000000,
+    "image": "/people/tyson-fury.jpg"
+  },
+  {
+    "id": 49,
+    "name": "Emma Raducanu",
+    "industry": "Sport",
+    "employer": "Freelance",
+    "jobTitle": "Professional Tennis Player",
+    "salary": 3000000,
+    "image": "/people/emma-raducanu.jpg"
+  },
+  {
+    "id": 50,
+    "name": "KSI",
+    "industry": "Media",
+    "employer": "Freelance",
+    "jobTitle": "YouTuber & Entertainer",
+    "salary": 12000000,
+    "image": "/people/ksi.jpg"
   }
+
 ]
