@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import PersonCard, { type PublicPerson, type RoundResult } from './PersonCard'
 import GuessInput from './GuessInput'
 import ScoreScreen from './ScoreScreen'
+import HomeBackground from './HomeBackground'
 
 interface SavedState {
   date: string
@@ -12,7 +13,7 @@ interface SavedState {
   gameComplete: boolean
 }
 
-export default function GameBoard() {
+export default function GameBoard({ images = [] }: { images?: string[] }) {
   const [people, setPeople] = useState<PublicPerson[]>([])
   const [date, setDate] = useState('')
   const [currentRound, setCurrentRound] = useState(0)
@@ -109,14 +110,17 @@ export default function GameBoard() {
 
   if (gameComplete) {
     return (
-      <main className="w-full max-w-lg mx-auto px-4 py-8">
-        <header className="text-center mb-8">
-          <Link href="/">
-            <h1 className="text-5xl font-bold text-yellow-400 tracking-tight hover:text-yellow-300 transition-colors">Paydle</h1>
-          </Link>
-          <p className="text-slate-500 text-sm mt-2">Daily salary guessing game</p>
-        </header>
-        <ScoreScreen results={results} people={people} date={date} />
+      <main className="w-full max-w-lg mx-auto px-4 py-8 relative">
+        <HomeBackground images={images} />
+        <div className="relative z-10">
+          <header className="text-center mb-8">
+            <Link href="/">
+              <h1 className="text-5xl font-bold text-yellow-400 tracking-tight hover:text-yellow-300 transition-colors">Paydle</h1>
+            </Link>
+            <p className="text-slate-500 text-sm mt-2">Daily salary guessing game</p>
+          </header>
+          <ScoreScreen results={results} people={people} date={date} />
+        </div>
       </main>
     )
   }
