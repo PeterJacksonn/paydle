@@ -39,13 +39,12 @@ export default function HomeBackground({ images }: { images: string[] }) {
             height: 'calc(100% + 600px)',
             display: 'grid',
             gridTemplateColumns: `repeat(${COLS}, 1fr)`,
-            gridTemplateRows: `repeat(${ROWS}, 1fr)`,
             animation: 'diagonal-scroll 12s ease-in-out infinite alternate',
             willChange: 'transform',
           }}
         >
           {tiles.map((src, i) => (
-            <div key={i} style={{ position: 'relative' }}>
+            <div key={i} style={{ position: 'relative', aspectRatio: '5/6' }}>
               <Image
                 src={src}
                 alt=""
