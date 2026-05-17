@@ -8,6 +8,7 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 export const metadata: Metadata = {
   title: 'Paydle - Daily Salary Guessing Game',
   description: 'Guess the salaries of UK public figures. New game every day.',
+  verification: { google: '5gykMafgsj1W9hNNvB_8ajhu3ukPsaXSCTz-xFRX_gw' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
