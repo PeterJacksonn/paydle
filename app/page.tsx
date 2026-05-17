@@ -1,16 +1,10 @@
-import fs from 'fs'
-import path from 'path'
 import Link from 'next/link'
 import HomeBackground from '@/components/HomeBackground'
+import people from '@/data/people.json'
+
+const images = people.map((p) => p.image)
 
 export default function Home() {
-  const peopleDir = path.join(process.cwd(), 'public', 'people')
-  const images = fs.existsSync(peopleDir)
-    ? fs.readdirSync(peopleDir)
-        .filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f))
-        .map((f) => `/people/${f}`)
-    : []
-
   return (
     <main className="flex flex-col items-center justify-center flex-1 px-4 text-center relative">
       <HomeBackground images={images} />

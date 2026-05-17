@@ -58,28 +58,31 @@ export default function GameBoard({ images = [] }: { images?: string[] }) {
 
   async function handleGuess(guess: number) {
     const person = people[currentRound]
-    const res = await fetch('/api/guess', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ personId: person.id, guess, hintsUsed: hintsRevealed }),
-    })
-    const data = await res.json()
+    try {
+      const res = await fetch('/api/guess', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ personId: person.id, guess, hintsUsed: hintsRevealed }),
+      })
+      if (!res.ok) throw new Error(`Server error ${res.status}`)
+      const data = await res.json()
 
-    const result: RoundResult = {
-      personId: person.id,
-      hintsUsed: hintsRevealed,
-      guess,
-      actual: data.actual,
-      score: data.score,
-      percentOff: data.percentOff,
+      const result: RoundResult = {
+        personId: person.id,
+        hintsUsed: hintsRevealed,
+        guess,
+        actual: data.actual,
+        score: data.score,
+        percentOff: data.percentOff,
+      }
+
+      const newResults = [...results, result]
+      setRoundResult(result)
+      setResults(newResults)
+      saveState(newResults, newResults.length === 5)
+    } catch {
+      setError('Failed to submit guess. Please check your connection and try again.')
     }
-
-    const newResults = [...results, result]
-    const complete = newResults.length === 5
-
-    setRoundResult(result)
-    setResults(newResults)
-    saveState(newResults, complete)
   }
 
   function nextRound() {

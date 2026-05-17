@@ -1,5 +1,4 @@
-import fs from 'fs/promises'
-import path from 'path'
+import allPeople from '@/data/people.json'
 
 export interface Person {
   id: number
@@ -36,10 +35,8 @@ function pickIndices(seed: number, total: number, count: number): number[] {
   return indices.slice(0, count)
 }
 
-export async function getDailyPeople(dateStr: string): Promise<Person[]> {
-  const filePath = path.join(process.cwd(), 'data', 'people.json')
-  const raw = await fs.readFile(filePath, 'utf-8')
-  const all: Person[] = JSON.parse(raw)
+export function getDailyPeople(dateStr: string): Person[] {
+  const all = allPeople as Person[]
   const indices = pickIndices(dateSeed(dateStr), all.length, 5)
   return indices.map((i) => all[i])
 }
