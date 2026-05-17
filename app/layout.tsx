@@ -6,7 +6,7 @@ import './globals.css'
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 
 export const metadata: Metadata = {
-  title: 'Paydle — Daily Salary Guessing Game',
+  title: 'Paydle - Daily Salary Guessing Game',
   description: 'Guess the salaries of UK public figures. New game every day.',
 }
 
