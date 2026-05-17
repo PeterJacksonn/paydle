@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 const COLS = 7
 const ROWS = 14
 
@@ -37,17 +39,21 @@ export default function HomeBackground({ images }: { images: string[] }) {
             height: 'calc(100% + 600px)',
             display: 'grid',
             gridTemplateColumns: `repeat(${COLS}, 1fr)`,
+            gridTemplateRows: `repeat(${ROWS}, 1fr)`,
             animation: 'diagonal-scroll 12s ease-in-out infinite alternate',
             willChange: 'transform',
           }}
         >
           {tiles.map((src, i) => (
-            <img
-              key={i}
-              src={src}
-              alt=""
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }}
-            />
+            <div key={i} style={{ position: 'relative' }}>
+              <Image
+                src={src}
+                alt=""
+                fill
+                sizes={`${Math.ceil(100 / COLS)}vw`}
+                style={{ objectFit: 'cover', objectPosition: 'top' }}
+              />
+            </div>
           ))}
         </div>
       </div>

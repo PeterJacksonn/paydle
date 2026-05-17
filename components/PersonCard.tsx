@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import { getPotential, scoreColor } from '@/lib/scoring'
 
 function useCountUp(target: number, duration = 1000) {
@@ -66,10 +67,12 @@ function PersonPhoto({ src, name }: { src: string; name: string }) {
   return (
     <div className="relative w-[200px] h-[260px] mx-auto rounded-2xl overflow-hidden bg-slate-700 flex items-center justify-center">
       {!failed && (
-        <img
+        <Image
           src={src}
           alt={name}
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          fill
+          sizes="200px"
+          className="object-cover object-top"
           onError={() => setFailed(true)}
         />
       )}
