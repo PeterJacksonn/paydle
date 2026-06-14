@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Paydle
 
-## Getting Started
+A daily salary guessing game I built for fun using Claude & Claude Code. You're shown a UK public figure, politician, footballer, TV presenter, CEO, and you have to guess their annual salary. Five rounds a day, same people for everyone, resets at midnight.
 
-First, run the development server:
+Live at [paydle.vercel.app](https://paydle.vercel.app)
+
+## How it works
+
+Each round you see a photo and name. You can reveal up to 3 hints (Industry → Employer → Job Title) but each one cuts your score potential. One guess per round, no going back. Scores are based on how close you are on a logarithmic scale, so being off by an order of magnitude hurts more than being off by 10%.
+
+The daily lineup is seeded by date so everyone gets the same 5 people. Salaries are never sent to the browser until after you've guessed — the actual figure only comes back from the server as part of the result.
+
+## The build
+
+Next.js 16 and Tailwind CSS, deployed on Vercel.
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Images
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Person images are in the repo under `public/people/`. If you add new people to `data/people.json`, you can fetch their images from Wikipedia:
 
-## Learn More
+```bash
+npm run download-images
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This fetches thumbnails via the Wikipedia REST API, resizes to 500×600px, and saves to `public/people/`. Skips anyone who already has an image. Run `node scripts/check-images.js` to see who's missing.
